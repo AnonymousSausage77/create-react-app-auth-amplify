@@ -20,7 +20,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <AppNavbar />
         <Router>
           <Switch>
             <Route exact path="/" component={AppJumbotron}/>
