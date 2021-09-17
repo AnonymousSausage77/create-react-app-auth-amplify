@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <div className="App pb-4 html" >
         <AmplifySignOut />
-        <Route exact path="/" component={AppJumbotron}/>
+        <AppJumbotron />
       </div>
     );
   }
