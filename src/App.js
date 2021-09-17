@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 
 import AppJumbotron from './AppJumbotron.js';
-//import AppNavbar from './Navbar.js';
+import AppNavbar from './Navbar.js';
 //import DriverLanding from './DriverLanding.js';
 //import CustomerLanding from './CustomerLanding.js';
 //import AdminLanding from './AdminLanding.js';
@@ -21,6 +21,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
+          <AppNavbar />
           <Switch>
             <Route exact path="/" component={AppJumbotron}/>
           </Switch>
