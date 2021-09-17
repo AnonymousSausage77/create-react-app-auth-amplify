@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 
 import AppJumbotron from './AppJumbotron.js';
+import {BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 import './App.css';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
@@ -15,7 +16,11 @@ class App extends Component {
     return (
       <div className="App">
         <AmplifySignOut />
-        <AppJumbotron />
+        <Switch>
+          <Route exact path="/">
+            <AppJumbotron />
+          </Route>
+        </Switch>
       </div>
     );
   }
