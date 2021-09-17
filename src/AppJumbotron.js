@@ -1,6 +1,5 @@
 import React from 'react';
 import { Jumbotron, Button, Container, Col } from 'reactstrap';
-import { Link } from 'react-router-dom'
 
 var AppJumbotron = (props) => {
   return (<><Jumbotron className="m-2 pt-5 my-5">
