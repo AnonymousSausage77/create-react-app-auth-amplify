@@ -24,15 +24,9 @@ class App extends Component {
           <AppNavbar />
           <Switch>
             <Route exact path="/" component={AppJumbotron}/>
-            <Route path="/driver" >
-              <DriverLanding />
-            </Route>
-            <Route path="/user" >
-              <CustomerLanding/>
-            </Route>
-            <Route path="/admin" >
-              <AdminLanding/>
-            </Route>
+            <Route path="/driver" component={DriverLanding} />
+            <Route path="/user" component={CustomerLanding} />
+            <Route path="/admin" component={AdminLanding} />
           </Switch>
         </Router>
       </div>
