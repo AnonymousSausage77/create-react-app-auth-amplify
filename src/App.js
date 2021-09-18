@@ -5,7 +5,7 @@ import AppJumbotron from './AppJumbotron.js';
 import AppNavbar from './Navbar.js';
 import DriverLanding from './DriverLanding.js';
 import CustomerLanding from './CustomerLanding.js';
-//import AdminLanding from './AdminLanding.js';
+import AdminLanding from './AdminLanding.js';
 
 import {BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
@@ -22,11 +22,14 @@ class App extends Component {
       <div className="App">
         <Router>
           <AppNavbar />
+          <div className="my-2 py-2">
           <Switch>
             <Route exact path="/" component={AppJumbotron}/>
             <Route path="/driver" component={DriverLanding}/>
-            <Route path="/customer" component={CustomerLanding}/>
+            <Route path="/user" component={CustomerLanding}/>
+            <Route path="/admin" component={AdminLanding}/>
           </Switch>
+          </div>
         </Router>
       </div>
     );
