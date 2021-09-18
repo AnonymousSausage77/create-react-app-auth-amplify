@@ -4,8 +4,8 @@ import logo from './logo.svg';
 import AppJumbotron from './AppJumbotron.js';
 import AppNavbar from './Navbar.js';
 import DriverLanding from './DriverLanding.js';
-import CustomerLanding from './CustomerLanding.js';
-import AdminLanding from './AdminLanding.js';
+//import CustomerLanding from './CustomerLanding.js';
+//import AdminLanding from './AdminLanding.js';
 
 import {BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
@@ -25,8 +25,8 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={AppJumbotron}/>
             <Route path="/driver" component={DriverLanding} />
-            <Route path="/user" component={CustomerLanding} />
-            <Route path="/admin" component={AdminLanding} />
+            //<Route path="/user" component={CustomerLanding} />
+            //<Route path="/admin" component={AdminLanding} />
           </Switch>
         </Router>
       </div>
