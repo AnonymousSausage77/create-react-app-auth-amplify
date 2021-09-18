@@ -1,5 +1,6 @@
 import React from 'react';
-import { Jumbotron, Button, Container, Col } from 'reactstrap';
+import { Jumbotron, Button, Container, Col } from 'reactstrap'
+import FileUpload from './FileUpload.js'
 
 var DriverLanding = (props) => {
   return (
@@ -8,7 +9,7 @@ var DriverLanding = (props) => {
         <Col className="offset-2 col-8">
           <h1 className="display-1">Welcome</h1>
           <p className="lead">Are you ready to drive?</p>
-
+          <FileUpload />
 
         </Col>
       </Container>
