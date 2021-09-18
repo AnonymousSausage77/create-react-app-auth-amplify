@@ -20,15 +20,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router>
-          <AppNavbar />
-          <Switch>
-            <Route exact path="/" component={AppJumbotron}/>
+    //    <Router>
+      //    <AppNavbar />
+      //    <Switch>
+        //    <Route exact path="/" component={AppJumbotron}/>
             //<Route path="/driver" component={DriverLanding} />
             //<Route path="/user" component={CustomerLanding} />
             //<Route path="/admin" component={AdminLanding} />
-          </Switch>
-        </Router>
+        //  </Switch>
+      //  </Router>
       </div>
     );
   }
