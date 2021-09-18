@@ -3,7 +3,7 @@ import logo from './logo.svg';
 
 import AppJumbotron from './AppJumbotron.js';
 import AppNavbar from './Navbar.js';
-import DriverLanding from './DriverLanding.js';
+//import DriverLanding from './DriverLanding.js';
 //import CustomerLanding from './CustomerLanding.js';
 //import AdminLanding from './AdminLanding.js';
 
@@ -24,7 +24,7 @@ class App extends Component {
           <AppNavbar />
           <Switch>
             <Route exact path="/" component={AppJumbotron}/>
-            <Route path="/driver" component={DriverLanding} />
+            //<Route path="/driver" component={DriverLanding} />
             //<Route path="/user" component={CustomerLanding} />
             //<Route path="/admin" component={AdminLanding} />
           </Switch>
